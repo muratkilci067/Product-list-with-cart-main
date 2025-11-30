@@ -1,0 +1,360 @@
+    :root{
+      --Red: hsl(14, 86%, 42%);
+      --Green: hsl(159, 69%, 38%);
+      --Rose1: hsl(20, 50%, 98%);
+      --Rose2: hsl(13, 31%, 94%);
+      --Rose3: hsl(14, 25%, 72%);
+      --Rose4: hsl(7, 20%, 60%);
+      --Rose5: hsl(12, 20%, 44%);
+      --Rose6: hsl(14, 65%, 9%);
+    }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+     }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+     }
+     *,
+     *::after,
+     *::before{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+     }
+     body{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: "Red Hat Text", sans-serif;
+      background-color: var(--Rose2);
+     }
+     main{
+      display: flex;
+      flex-direction: row;
+      padding: 5rem;
+     }
+     h1{
+      position: absolute;
+      top: 1rem;
+      font-weight: 700;
+     }
+     .container{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto auto;
+      gap: 2rem;
+     }
+     .add-btn{
+      position: relative;
+      bottom: 2.5rem;
+      left: 7rem;
+      width: 270px;
+      height: 65px;
+      border-radius: 3rem;
+      border: 2px solid var(--Rose4);
+      background-color: var(--Rose1);
+      background-image: url(assets/images/icon-add-to-cart.svg);
+      background-repeat: no-repeat;
+      background-position: 3rem;
+      background-size: 2rem;
+      padding: 1rem 1rem 1rem 3rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+     }
+     img{
+      border-radius: 1rem;
+     }
+     .name{
+      color: var(--Rose6);
+      margin-bottom: 0.4rem;
+     }
+     .category{
+      color: var(--Rose4);
+      margin-bottom: 0.4rem;
+     }
+     .price{
+      color: var(--Red);
+      font-weight: 700;
+     }
+     .quantity{
+      min-width: 450px;
+      height: 375px;
+      border-radius: 1rem;
+      background-color: var(--Rose1);
+      margin: 0 2rem 2rem 2rem;
+      padding: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      overflow-y: visible;
+      overflow-x: hidden;
+     }
+     .quantity h2{
+      margin-bottom: 1rem;
+      color: var(--Red);
+     }
+     .quantity > img{
+      position: sticky;
+      left: 30%;
+      top: 1rem;
+      width: 150px;
+     }
+     .quantity p{
+      position: sticky;
+      text-align: center;
+      top: 1rem;
+      color: var(--Rose5);
+      font-weight: 600;
+      font-size: 1rem;
+     }
+     .counter{
+      position: relative;
+      bottom: 2.5rem;
+      left: 7rem;
+      width: 270px;
+      height: 65px;
+      border-radius: 3rem;
+      border: 2px solid var(--Red);
+      background-color: var(--Red);
+      color: white;
+      background-repeat: no-repeat;
+      background-position: 3rem;
+      background-size: 2rem;
+      padding: 1rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+     }
+     .counter-btn{
+      background-color: transparent;
+      color: white;
+      border-radius: 50%;
+      border: 2px solid white;
+      width: 30px;
+      height: 30px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+     .counter-btn:hover{
+      background-color: white;
+      color: var(--Red);
+      transition: 0.2s;
+     }
+     .selected {
+      border: 3px solid var(--Red);
+     }
+     .remove-img{
+      width: 1rem;
+      height: 1rem;
+      cursor: pointer;
+      display: block;
+     }
+     .item-inf{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+     }
+     .item-inf-1{
+      font-weight: 700;
+      color: var(--Red);
+     }
+     .item-inf-2{
+      color: var(--Rose4);
+     }
+     .item-inf-3{
+      color: var(--Rose5);
+     }
+     .cart-info{
+      display: flex;
+      flex-direction: row;
+      gap: 0.3rem;
+     }
+     .cart-info p {
+      margin: 0.2rem 0;
+     }
+     .cart-info-sub{
+      display: flex;
+      flex-direction: column;
+     } 
+     .cart-item{
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--Rose3);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+     }
+     .cart-total{
+      position: static;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+     }
+     .total-text{
+      font-weight: 400;
+     }
+     .carbon-neutral{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+  background-color: var(--Rose2);
+  padding: 0.8rem 0;
+  border-radius: 0.5rem;
+     }
+     .carbon-neutral img{
+      width: 24px;
+      height: auto;
+      margin: 0;
+      position: static;
+     }
+     .carbon-neutral p {
+      margin:0;
+      position: static;
+     }
+     .confirm-btn{
+      position: static;
+      margin-top: 1rem;
+      border-radius: 3rem;
+      border: none;
+      background-color: var(--Red);
+      color: var(--Rose2);
+      font-size: 1.3rem;
+      padding: 0.8rem;
+      width: 100%;
+      cursor: pointer;
+     }
+     .overlay{
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(1px);
+      z-index: 100;
+     }
+     .modal{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 1rem;
+      border-radius: 0.8rem;
+      width: 500px;
+      z-index: 200;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+     }
+     .hidden{
+      display: none;
+     }
+     #newOrderBtn{
+      position: static;
+      margin-top: 1rem;
+      border-radius: 3rem;
+      border: none;
+      background-color: var(--Red);
+      color: var(--Rose2);
+      font-size: 0.8rem;
+      padding: 0.8rem;
+      width: 100%;
+      cursor: pointer;
+     }
+     .thumbnail-img{
+      width: 50px;
+      height: auto;
+      border-radius: 0.2rem;
+     }
+     .cart-info2{
+      padding: 1rem;
+     }
+     .cart-info-sub2{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--Rose2);
+     }
+     .modal-items{
+      background-color: var(--Rose1);
+      width: 100%;
+      height: auto;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-top: 2rem;
+     }
+     .order-conf{
+      font-size: 1.7rem;
+     }
+     .enjoy-food{
+      color: var(--Rose3);
+      font-size: 0.8rem;
+     }
+     .order-total2{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+     }
+     @media screen and (max-width: 1024px) {
+      .add-btn{
+      left: 5rem;
+     }
+     .counter{
+      left: 5rem;
+     }
+     }
+      @media screen and (max-width: 768px) {
+      main{
+      display: flex;
+      flex-direction: column;
+      padding: 5rem 3rem;
+     }
+     .container{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+     }
+     .add-btn{
+      display: block;
+      margin: 0 auto;
+      left: 0.8rem;
+      width: 220px;
+      height: 55px;
+      background-position: 2.4rem;
+      background-size: 1.6rem;
+     }
+     .imageSize{
+      width: 100%;
+      height: auto;
+     }
+     .counter{
+      display: flex;
+      margin: 0 auto;
+      left: 0.8rem;
+      width: 220px;
+      height: 55px;
+      background-position: 2.4rem;
+      background-size: 1.6rem;
+     }
+     .quantity{
+      display: block;
+      margin: 2rem auto 0 auto;
+      width:  100%;
+      min-width: 300px;
+      height: auto;
+     }
+     }
