@@ -11,7 +11,7 @@ This project is a solution for the Frontend Mentor challenge where users can vie
 
 ## 🔗 Live Site
 
-[Live Demo](https://muratkilci067.github.io/Product-list-with-cart/) 
+[Live Demo](https://muratkilci067.github.io/Product-list-with-cart-main/) 
 
 ---
 
